@@ -8,6 +8,7 @@ function resolve(dir) {
 const NODE_ENV = process.env.NODE_ENV
 
 module.exports = {
+  outputDir: 'docs',
   publicPath: NODE_ENV !== 'development' ? '/uidoc' : '/',
   css: {
     extract: true
