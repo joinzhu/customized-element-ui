@@ -1,0 +1,128 @@
+/**
+  * 修改element-ui默认样式
+  * 不用@import，因为在vue.config.js中已经进行了全局注入
+  */
+.el-dialog {
+  #element-ui-shared.el-dialog()
+}
+
+// el-table
+.el-table {
+  #element-ui-shared.el-table()
+}
+
+// el-button
+.el-button {
+  #element-ui-shared.el-button()
+}
+
+// el-link
+.el-link {
+  #element-ui-shared.el-link()
+}
+
+// el-input
+.el-input__inner {
+  height: 32px !important;
+  line-height: 30px;
+  border-color: #DEDEDE;
+  color: #333;
+  padding-left: 16px;
+  padding-right: 40px;
+
+  &+.el-input__suffix {
+    top: 1px;
+    .el-input__icon {
+      line-height: 30px;
+    }
+  }
+
+  &:hover:not([disabled='disabled']),
+  &:active:not([disabled='disabled']),
+  &:visited,
+  &:focus {
+    border-color: @theme-blue-1;
+  }
+}
+
+*:not('.el-pagination') {
+  .el-input {
+    .el-input__inner {
+      .el-input__inner();
+    }
+  }
+}
+
+// el-select
+.el-select {
+  .el-input {
+    .el-input__suffix {
+      .el-input__icon {
+        line-height: inherit;
+      }
+    }
+  }
+}
+
+// el-date-picker
+.el-date-editor {
+  .el-input__inner();
+
+  &.el-range-editor {
+    width: 280px;
+    padding: 3px 16px;
+
+    .el-input__icon{
+      position: absolute;
+      &.el-range__icon {
+        right: 10px;
+      }
+      &.el-icon-circle-close {
+        right: 30px;
+      }
+    }
+
+
+
+    .el-range-input {
+      text-align: left;
+      width: 90px;
+    }
+
+    .el-range-separator {
+      width: fit-content;
+      box-sizing: border-box;
+      padding-left: 5px;
+      padding-right:24px;
+      line-height: 24px;
+      color: #999999;
+    }
+  }
+}
+
+// el-form
+.el-form {
+  #element-ui-shared.el-form()
+}
+
+// 气泡
+.el-tooltip__popper {
+  #element-ui-shared.el-tooltip__popper()
+}
+
+// el-message
+.el-message {
+  top: 70px !important;
+  padding: 11px 15px 11px 20px;
+  z-index: 9999 !important;
+}
+
+// el-message-box
+.el-message-box {
+  #element-ui-shared.el-message-box()
+}
+
+// Tinymce样式
+.tox-notifications-container {
+  display: none !important;
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@wise/element-ui",
+  "version": "1.0.2",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "doc": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name ui --dest lib src/install.js",
+    "globalcss": "gulp",
+    "build": "npm run lib && npm run globalcss",
+    "push": "npm publish",
+    "online": "npm run build && npm run push"
+  },
+  "main": "./lib/ui.umd.min.js",
+  "dependencies": {
+    "@tinymce/tinymce-vue": "^3.2.8",
+    "@vue/composition-api": "^1.6.1",
+    "axios": "^0.27.2",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.11.0",
+    "element-resize-detector": "^1.2.4",
+    "element-ui": "^2.15.6",
+    "highlight.js": "^11.5.0",
+    "lodash": "^4.17.21",
+    "tinymce": "^6.0.1",
+    "vue": "^2.6.11",
+    "vue-router": "3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-pipeline-operator": "^7.17.6",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-eslint": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^2.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "prettier": "^2.2.1",
+    "style-resources-loader": "^1.4.1",
+    "vue-cli-plugin-style-resources-loader": "~0.1.5",
+    "vue-cli-plugin-windicss": "~1.1.3",
+    "vue-dotmd-loader": "^0.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "element-ui": "^2.15.6",
+    "vue": "^2.6.11"
+  },
+  "publishConfig": {
+    "@wise:registry": "http://repo.wise-inc.com/repository/npm-hosted/"
+  }
+}

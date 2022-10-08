@@ -1,0 +1,106 @@
+/*
+* 此处变量和样式只供文档使用
+*/
+
+body {
+  font-family: proxima-nova, sans-serif;
+  color: #1b1425;
+}
+
+@doc-main: #f3d2c1;
+@doc-background: #fef6e4;
+@doc-button: #f582ae;
+@doc-headline: #001858;
+@doc-paragraph: #172c66;
+@doc-button-text: #001858;
+@doc-stroke: #001858;
+@doc-highline: #fef6e4;
+@doc-secondary: #8bd3dd;
+@doc-tertiary: #f582ae;
+
+.title-1 {
+  color: @doc-headline;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.doc-menu {
+  background-color: @doc-main;
+  border-right: 3px solid #000;
+  min-height: 100vh;
+
+  .el-menu {
+    background-color: @doc-main;
+
+    .el-menu-item {
+      &.is-active {
+        color: @doc-button-text;
+        background-color: @doc-highline;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: @doc-highline;
+      }
+    }
+  }
+}
+
+.doc-content {
+  background-color: @doc-background;
+  width: 100%;
+  padding: 60px 0;
+
+  .doc-main {
+    width: 1080px;
+    margin: auto;
+  }
+}
+
+.jigsaw-box {
+  display: grid;
+  grid-template-columns: 400px 680px;
+
+  .jigsaw {
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    padding: 40px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    font-size: 14px;
+
+    span {
+      display: inline-block;
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+
+    }
+
+    &.border span {
+      border-width: 0px 3px 3px 0px;
+      border-style: solid;
+      border-color: @doc-headline;
+    }
+  }
+}
+
+.markdown-body {
+  color: @doc-paragraph;
+
+  a {
+    color: @doc-tertiary;
+    text-decoration: underline;
+  }
+
+  pre {
+    background-color: @doc-background;
+  }
+
+  .hljs {
+    color: @doc-paragraph;
+    background-color: @doc-main;
+  }
+}
