@@ -159,5 +159,9 @@ export default [
     redirect: { name: 'WBase' },
     component: { render: e => e('router-view') },
     children: routeItems
+  },
+  {
+    path: '*',
+    redirect: { name: 'WBase' }
   }
 ]

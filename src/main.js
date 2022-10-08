@@ -29,7 +29,7 @@ VueRouter.prototype.push = function push(location) {
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.NODE_ENV !== 'development' ? '/uidoc' : '/',
+  base: process.env.NODE_ENV !== 'development' ? '/customized-element-ui' : '/',
   scrollBehavior(to, from, savedPosition) {
     return { x: 0, y: 0 }
   },

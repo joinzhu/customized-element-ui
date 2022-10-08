@@ -2,7 +2,7 @@
 
 基于 element-ui 二次封装的组件库
 
-文档：<http://join.eline56.com/uidoc/WBase>
+文档：<https://joinzhu.github.io/customized-element-ui/>
 
 ### 安装
 
