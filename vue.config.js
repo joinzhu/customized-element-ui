@@ -9,7 +9,7 @@ const NODE_ENV = process.env.NODE_ENV
 
 module.exports = {
   outputDir: 'docs',
-  publicPath: NODE_ENV !== 'development' ? '/uidoc' : '/',
+  publicPath: NODE_ENV !== 'development' ? '/customized-element-ui' : '/',
   css: {
     extract: true
   },
