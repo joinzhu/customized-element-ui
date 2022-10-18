@@ -8,7 +8,7 @@ export default {
   name: 'ExchangeDoc',
   methods: {
     handleClick() {
-      location.href = 'http://join.eline56.com/toolsdoc/validate'
+      location.href = 'https://joinzhu.github.io/customized-tools-set/validate'
     }
   }
 }
