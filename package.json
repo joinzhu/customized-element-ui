@@ -57,6 +57,6 @@
     "vue": "^2.6.11"
   },
   "publishConfig": {
-    "@wise:registry": "http://repo.wise-inc.com/repository/npm-hosted/"
+    "@wise:registry": "***"
   }
 }
