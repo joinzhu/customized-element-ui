@@ -1,6 +1,6 @@
 <template>
   <div class="exchangeDoc" @click="handleClick">
-    <span class="txt">TL</span>
+    <span class="txt">TS</span>
   </div>
 </template>
 <script>
